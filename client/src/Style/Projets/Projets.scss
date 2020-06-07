@@ -1,0 +1,14 @@
+@import '../variables';
+
+#projets{
+    color: $fondLiens;
+    .anim{
+        animation: anim 2s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 500px){
+    #projets{
+        padding-right: 5%;
+    }
+}

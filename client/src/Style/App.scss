@@ -1,0 +1,20 @@
+@import './Navigation/Navigation.scss';
+@import './Accueil/Accueil.scss';
+@import './Alternance/Alternance.scss';
+@import './Projets/Projets.scss';
+@import './Contact/Contact.scss';
+
+* {
+    font-family: "Arial Rounded MT";
+}
+
+#app{
+    background-color: #12242A;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 700px){
+    #app{
+        overflow-y: visible;
+    }
+}

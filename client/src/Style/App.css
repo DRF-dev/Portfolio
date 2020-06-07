@@ -1,0 +1,176 @@
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+#navigation {
+  background-color: #148C6C;
+  height: 100%;
+}
+#navigation ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#navigation ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  box-shadow: -5px 5px #21AEA3;
+}
+#navigation ul li a:hover {
+  background-color: #21AEA3;
+  box-shadow: 0px 0px #21AEA3;
+  color: white;
+  transform: scale(1.2);
+  transition-duration: 600ms;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+#accueil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-align: end;
+}
+#accueil span {
+  color: #21AEA3;
+}
+#accueil div {
+  animation: entrer 1s ease-in-out;
+}
+
+@keyframes entrer {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+#alternance {
+  color: white;
+  margin: 0px 5%;
+}
+#alternance p {
+  margin: 5% 5% 5% 0px;
+}
+#alternance img {
+  width: 100%;
+}
+#alternance .anim {
+  animation: anim 2s ease-in-out;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+#projets {
+  color: #21AEA3;
+}
+#projets .anim {
+  animation: anim 2s ease-in-out;
+}
+
+@media screen and (min-width: 500px) {
+  #projets {
+    padding-right: 5%;
+  }
+}
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+#contact {
+  color: #21AEA3;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#contact #form {
+  text-align: center;
+}
+#contact #form button {
+  width: 25%;
+}
+#contact img {
+  width: 30%;
+}
+
+@media screen and (max-width: 500px) {
+  #contact .responsive {
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+* {
+  font-family: "Arial Rounded MT";
+}
+
+#app {
+  background-color: #12242A;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  #app {
+    overflow-y: visible;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
