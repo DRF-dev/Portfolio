@@ -18,7 +18,7 @@ const limiter = rateLimit({
 import messages from "./Routes/messages"
 
 //Connexion base de donnée
-connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
+connect(process.env.MONGO_URI || "mongodb+srv://DRF:0614012176Df99@cluster0-ybmru.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
     .then(() => console.log("Base de donnée connecté avec succès"))
     .catch(err => console.log(err))
 
