@@ -64,9 +64,9 @@ const Skills = () => {
                         <div className="cube">
                             <Image src={node}></Image>
                             <Image src={reactLogo}></Image>
-                            <Image src={ts}></Image>
-                            <Image src={js}></Image>
                             <Image src={py}></Image>
+                            <Image src={js}></Image>
+                            <Image src={ts}></Image>
                             <Image src={php}></Image>
                         </div>
                     </div>
