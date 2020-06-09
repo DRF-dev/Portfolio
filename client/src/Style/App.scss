@@ -3,14 +3,21 @@
 @import './Alternance/Alternance.scss';
 @import './Projets/Projets.scss';
 @import './Contact/Contact.scss';
+@import './variables';
 
 * {
     font-family: "Arial Rounded MT";
 }
 
 #app{
-    background-color: #12242A;
+    background-color: $fondApp;
     overflow: hidden;
+    #app-navbar-phone{
+        background-color: rgba($color: $fondNav, $alpha: 0.85);
+        padding-left: 10vw; 
+        padding-top: 1vh; 
+        padding-bottom: 1vh;
+    }
 }
 
 @media screen and (max-width: 700px){

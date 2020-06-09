@@ -1,26 +1,25 @@
 @import '../variables';
 
 #contact{
+    @include centreContainer();
     color: $fondLiens;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     #form{
         text-align: center;
         button{
-            width: 25%;
+            width: 30%;
         }
     }
     img{
-        width: 30%;
+        width: 40%;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     #contact{
-        .responsive{
-            margin-top: 5%;
-            text-align: center;
+        img{
+            width: 100%;
         }
     }
 }

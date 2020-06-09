@@ -1,6 +1,7 @@
 @import '../variables';
 
 #alternance{
+    @include centreContainer();
     color: white;
     margin: 0px 5%;
     p{

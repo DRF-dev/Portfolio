@@ -5,8 +5,15 @@
     align-items: center;
 }
 
+@mixin centreContainer {
+    @include centre();
+    width: 100%;
+    height: 100%;
+}
+
 $fondLiens: #21AEA3;
 $fondNav: #148C6C;
+$fondApp: #12242A;
 
 @keyframes anim{
     from{

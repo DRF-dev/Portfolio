@@ -10,8 +10,10 @@
   }
 }
 #navigation {
+  position: relative;
   background-color: #148C6C;
   height: 100%;
+  min-width: 178px;
 }
 #navigation ul {
   height: 100%;
@@ -28,6 +30,7 @@
   color: black;
   width: 100%;
   height: 100%;
+  min-width: 90px;
   background-color: white;
   box-shadow: -5px 5px #21AEA3;
 }
@@ -39,6 +42,11 @@
   transition-duration: 600ms;
 }
 
+@media screen and (max-width: 575px) {
+  #navigation {
+    height: 25vh;
+  }
+}
 @keyframes anim {
   from {
     opacity: 0;
@@ -54,9 +62,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   width: 100%;
   height: 100%;
+  color: white;
   text-align: end;
 }
 #accueil span {
@@ -77,6 +85,11 @@
     transform: translate(0%);
   }
 }
+@media screen and (max-width: 600px) {
+  #accueil .presentation {
+    text-align: center;
+  }
+}
 @keyframes anim {
   from {
     opacity: 0;
@@ -89,6 +102,11 @@
   }
 }
 #alternance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   color: white;
   margin: 0px 5%;
 }
@@ -125,6 +143,11 @@
     padding-right: 5%;
   }
 }
+@media screen and (max-width: 800px) {
+  #projets {
+    margin-left: 8%;
+  }
+}
 @keyframes anim {
   from {
     opacity: 0;
@@ -137,25 +160,39 @@
   }
 }
 #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   color: #21AEA3;
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 #contact #form {
   text-align: center;
 }
 #contact #form button {
-  width: 25%;
-}
-#contact img {
   width: 30%;
 }
+#contact img {
+  width: 40%;
+}
 
-@media screen and (max-width: 500px) {
-  #contact .responsive {
-    margin-top: 5%;
-    text-align: center;
+@media screen and (max-width: 600px) {
+  #contact img {
+    width: 100%;
+  }
+}
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
   }
 }
 * {
@@ -165,6 +202,12 @@
 #app {
   background-color: #12242A;
   overflow: hidden;
+}
+#app #app-navbar-phone {
+  background-color: rgba(20, 140, 108, 0.85);
+  padding-left: 10vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 @media screen and (max-width: 700px) {

@@ -19,13 +19,13 @@ const Accueil = () => {
     }, [])
 
     return(
-        <Row id="accueil">
-            <Col sm={8} xs={12}>
+        <Row id="accueil" className="mt-3 mt-sm-0">
+            <Col sm={7} xs={12} className="presentation">
                 <h1>Salut,</h1>
                 <h1>Je suis <span>Francisco Dany</span></h1>
                 <span id="metiers"></span>
             </Col>
-            <Col sm={4} xs={12}>
+            <Col sm={5} xs={12}>
                 <Image src={Githubjudo} fluid/>
             </Col>
         </Row>

@@ -14,7 +14,7 @@ const Skills = () => {
                 datasets: [
                     {
                         label: 'Compétence',
-                        data: [85, 80, 35, 60, 35],
+                        data: [80, 80, 35, 60, 35],
                         backgroundColor: 'rgba(33, 174, 163, 0.7)'
                     }
                 ]
@@ -49,7 +49,7 @@ const Skills = () => {
     }, [])
 
     return(
-        <Container className="mt-5">
+        <Container className="d-flex align-items-center justify-content-center" style={{ height: "100%", width: "100%" }}>
             <canvas id="canvaTwo"></canvas>
         </Container>
     )

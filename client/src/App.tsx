@@ -2,6 +2,7 @@ import React from 'react';
 import './Style/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'notyf/notyf.min.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import { Row, Col } from "react-bootstrap"
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
 
@@ -13,21 +14,13 @@ import Skills from "./Routes/Skills"
 import Contact from "./Routes/Contact"
 
 const App = () => {
-	const [hauteur, setHauteur] = React.useState<number>(window.innerHeight)
-	const [largeur, setLargeur] = React.useState<number>(window.innerWidth)
-
-	window.onresize = ()=>{
-		setHauteur(window.innerHeight)
-		setLargeur(window.innerWidth)
-	}
-
 	return(
 		<Router>
-			<Row style={{ height: hauteur, width: largeur }} id="app">
+			<Row style={{ height: "100vh", width: "100vw" }} id="app">
 				<Col sm={2}>
-					<Navigation/>
+					<Navigation />
 				</Col>
-				<Col>
+				<Col sm={10}>
 					<Switch>
 						<Route exact path="/accueil" component={Accueil} />
 						<Route exact path="/alternance" component={Alternance} />

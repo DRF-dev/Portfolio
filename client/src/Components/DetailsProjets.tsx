@@ -7,7 +7,7 @@ const DetailsProjets: React.FunctionComponent<{ nom: string, images: any[], lien
             <h2 className="h4">{nom}</h2>
             <div className="d-flex flex-row align-items-center mb-2">
                 {images.map(image => {
-                    return <Image key={image} src={image} fluid style={{ width: "5%", marginLeft: "2%"}}/>
+                    return <Image key={image} src={image} fluid style={{ width: "10%", marginLeft: "2%"}}/>
                 })}
             </div>                        
             <a href={lien} target="_blank" rel="noopener noreferrer" className="text-decoration-none">{lien}</a>
