@@ -12,16 +12,4 @@ const revealFunction = (classeViser:any, classeAjouter:any) => {
     }
 }
 
-const suppNav = () => {
-    const doc = document.getElementById('navigation')
-    if(doc === null) return
-    doc.style.display = 'none'
-}
-
-const revealNav = () => {
-    const doc = document.getElementById('navigation')
-    if(doc === null) return
-    doc.style.display = 'flex'
-}
-
-export { revealFunction, suppNav, revealNav }
+export { revealFunction }

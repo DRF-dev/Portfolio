@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Navigation = () => {
     return(
         <Row id="navigation">
-            <Col>
+            <Col style={{ height: "100%", width: "100%" }}>
                 <ul>
                     <li><Link to="/accueil" className="text-decoration-none">Accueil</Link></li>
                     <li><Link to="/alternance" className="text-decoration-none">Alternance</Link></li>

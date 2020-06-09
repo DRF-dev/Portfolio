@@ -47,9 +47,9 @@
     height: 18vh;
     background-color: #12242A;
     margin-top: 5%;
+    margin-left: -15%;
   }
   #navigation ul {
-    height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
