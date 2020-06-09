@@ -35,6 +35,19 @@
 
 @media screen and (max-width: 575px){
     #navigation{
-        height: 25vh;
+        height: 18vh;
+        background-color: $fondApp;
+        margin-top: 5%;
+        ul{
+            height: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            li{
+                a{
+                    height: 75%;
+                }
+            }
+        }
     }
 }

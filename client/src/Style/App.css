@@ -44,7 +44,18 @@
 
 @media screen and (max-width: 575px) {
   #navigation {
-    height: 25vh;
+    height: 18vh;
+    background-color: #12242A;
+    margin-top: 5%;
+  }
+  #navigation ul {
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #navigation ul li a {
+    height: 75%;
   }
 }
 @keyframes anim {
