@@ -159,6 +159,13 @@
     margin-left: 8%;
   }
 }
+@media screen and (max-width: 575px) {
+  #projets {
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 @keyframes anim {
   from {
     opacity: 0;
