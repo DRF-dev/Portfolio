@@ -90,7 +90,7 @@ const Alternance = () => {
                             </Col>
                             <Col xs={10} sm={10}>
                                 <p>Localisation ?</p>
-                                <p>Région île de france</p>
+                                <p>Région Île-de-France</p>
                             </Col>
                         </Row>
                     </Col>
