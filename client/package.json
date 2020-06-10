@@ -5,6 +5,10 @@
   "dependencies": {
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
+    "@types/chart.js": "^2.9.21",
+    "@types/node": "^12.12.43",
+    "@types/notyf": "^3.0.0",
+    "@types/react": "^16.9.35",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "chart.js": "^2.9.3",
@@ -43,10 +47,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@types/chart.js": "^2.9.21",
     "@types/jest": "^24.0.0",
-    "@types/node": "^12.12.43",
-    "@types/notyf": "^3.0.0",
-    "@types/react": "^16.9.35"
   }
 }
