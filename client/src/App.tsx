@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react'
 import './Style/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'notyf/notyf.min.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
 import { Row, Col } from "react-bootstrap"
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
 
 import Navigation from "./Components/Navigation"
-import Accueil from "./Routes/Accueil"
+import Loading from "./Components/Loading"
+/* import Accueil from "./Routes/Accueil"
 import Alternance from "./Routes/Alternance"
 import Projets from "./Routes/Projets"
 import Skills from "./Routes/Skills"
 import Contact from "./Routes/Contact"
+import Contact from "./Routes/Contact" */
+
+const Accueil = lazy(() => import('./Routes/Accueil'))
+const Alternance = lazy(() => import('./Routes/Alternance'))
+const Projets = lazy(() => import('./Routes/Projets'))
+const Skills = lazy(() => import('./Routes/Skills'))
+const Contact = lazy(() => import('./Routes/Contact'))
 
 const App = () => {
 	return(
@@ -21,14 +28,16 @@ const App = () => {
 					<Navigation />
 				</Col>
 				<Col sm={10}>
-					<Switch>
-						<Route exact path="/accueil" component={Accueil} />
-						<Route exact path="/alternance" component={Alternance} />
-						<Route exact path="/projets" component={Projets} />
-						<Route exact path="/skills" component={Skills} />
-						<Route exact path="/contact" component={Contact} />
-						<Redirect to="/accueil" />
-					</Switch>
+					<Suspense fallback={<Loading />}>
+						<Switch>
+							<Route exact path="/accueil" component={Accueil} />
+							<Route exact path="/alternance" component={Alternance} />
+							<Route exact path="/projets" component={Projets} />
+							<Route exact path="/skills" component={Skills} />
+							<Route exact path="/contact" component={Contact} />
+							<Redirect to="/accueil" />
+						</Switch>
+					</Suspense>
 				</Col>
 			</Row>
 		</Router>
