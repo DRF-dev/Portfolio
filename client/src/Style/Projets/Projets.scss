@@ -1,7 +1,10 @@
 @import '../variables';
 
 #projets{
-    color: $fondLiens;
+    color: whitesmoke;
+    h1{
+        color: $fondLiens;
+    }
     .anim{
         animation: anim 2s ease-in-out;
     }

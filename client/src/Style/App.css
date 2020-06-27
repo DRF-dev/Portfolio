@@ -143,6 +143,9 @@
   }
 }
 #projets {
+  color: whitesmoke;
+}
+#projets h1 {
   color: #21AEA3;
 }
 #projets .anim {
@@ -286,12 +289,6 @@
 #app {
   background-color: #12242A;
   overflow: hidden;
-}
-#app #app-navbar-phone {
-  background-color: rgba(20, 140, 108, 0.85);
-  padding-left: 10vw;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
 }
 
 @media screen and (max-width: 700px) {

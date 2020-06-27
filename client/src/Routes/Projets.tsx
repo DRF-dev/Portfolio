@@ -10,11 +10,8 @@ import logoReact from "../Img/1200px-React-icon.svg.png"
 import socket from "../Img/socket.png"
 import py from "../Img/1200px-Python-logo-notext.svg.png"
 import flask from "../Img/flask.png"
-import kotlin from "../Img/1200px-Kotlin-logo.svg.png"
-import php from "../Img/1024px-PHP-logo.svg.png"
-import cake from "../Img/téléchargement.png"
-import sql from "../Img/1200px-MySQL.svg.png"
 import mongoDB from "../Img/1200px-MongoDB-Logo.svg.png"
+import go from "../Img/logo_go.png"
 
 const Projets = () => {
 
@@ -32,11 +29,11 @@ const Projets = () => {
                 </Row>
                 <Row className="mt-sm-5">
                     <DetailsProjets nom="Chat & todo-liste en temps réel" images={[node, js, logoReact, socket]} lien="https://github.com/DRF-dev/Todo-liste-en-temps-reel" />
-                    <DetailsProjets nom="Gestion d'émission de radio (CRUD)" images={[php, cake, sql]} lien="https://github.com/DRF-dev/Radio-CakePHP" />
+                    <DetailsProjets nom="Jeux du pendu" images={[go]} lien="https://github.com/DRF-dev/jeux_du_pendu" />
                 </Row>
                 <Row className="mt-sm-5">
+                    <DetailsProjets nom="CRUD en CLI" images={[go]} lien="https://github.com/DRF-dev/CRUD_CLI" />
                     <DetailsProjets nom="Page d'informations sur la machine" images={[py, flask]} lien="https://github.com/DRF-dev/firstFlask" />
-                    <DetailsProjets nom="Compteur de clic" images={[kotlin]} lien="https://github.com/DRF-dev/compteurClickKotlin" />
                 </Row>
             </div>
         </Container>

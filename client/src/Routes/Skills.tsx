@@ -7,7 +7,7 @@ import reactLogo from "../Img/1200px-React-icon.svg.png"
 import ts from "../Img/1-mn6bOs7s6Qbao15PMNRyOA-300x300.png"
 import js from "../Img/1200px-Unofficial_JavaScript_logo_2.svg.png"
 import py from "../Img/1200px-Python-logo-notext.svg.png"
-import php from "../Img/1024px-PHP-logo.svg.png"
+import go from "../Img/logo_go.png"
 
 const Skills = () => {
     
@@ -67,7 +67,7 @@ const Skills = () => {
                             <Image src={py}></Image>
                             <Image src={js}></Image>
                             <Image src={ts}></Image>
-                            <Image src={php}></Image>
+                            <Image src={go}></Image>
                         </div>
                     </div>
                 </Col>
