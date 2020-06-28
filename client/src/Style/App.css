@@ -10,7 +10,6 @@
   }
 }
 #navigation {
-  position: relative;
   background-color: #148C6C;
   height: 100%;
   min-width: 178px;
@@ -256,11 +255,14 @@
 }
 
 @keyframes loop {
-  from {
-    transform: rotateX(0deg) rotateY(0deg);
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
-  to {
-    transform: rotateX(360deg) rotateY(360deg);
+  50% {
+    transform: rotateX(180deg) rotateY(360deg) rotate(90deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotate(360deg);
   }
 }
 @media screen and (max-width: 575px) {

@@ -8,7 +8,7 @@ import * as serviceWorker from './serviceWorker';
 const App = lazy(() => import('./App'))
 
 ReactDOM.render(
-  <Suspense fallback={Loading}>
+  <Suspense fallback={Loading()}>
     <React.StrictMode>
       <App />
     </React.StrictMode>
