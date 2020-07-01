@@ -29,7 +29,7 @@ const Projets = () => {
                 </Row>
                 <Row className="mt-sm-5">
                     <DetailsProjets nom="Chat & todo-liste en temps réel" images={[node, js, logoReact, socket]} lien="https://github.com/DRF-dev/Todo-liste-en-temps-reel" />
-                    <DetailsProjets nom="Jeux du pendu" images={[go]} lien="https://github.com/DRF-dev/jeux_du_pendu" />
+                    <DetailsProjets nom="Générateur de fichiers PDF" images={[go]} lien="https://github.com/DRF-dev/Generateur_pdf" />
                 </Row>
                 <Row className="mt-sm-5">
                     <DetailsProjets nom="CRUD en CLI" images={[go]} lien="https://github.com/DRF-dev/CRUD_CLI" />
