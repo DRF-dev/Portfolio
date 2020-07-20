@@ -9,7 +9,7 @@ import js from "../Img/1200px-Unofficial_JavaScript_logo_2.svg.png"
 import logoReact from "../Img/1200px-React-icon.svg.png"
 import socket from "../Img/socket.png"
 import py from "../Img/1200px-Python-logo-notext.svg.png"
-import flask from "../Img/flask.png"
+//import flask from "../Img/flask.png"
 import mongoDB from "../Img/1200px-MongoDB-Logo.svg.png"
 import go from "../Img/logo_go.png"
 
@@ -33,7 +33,7 @@ const Projets = () => {
                 </Row>
                 <Row className="mt-sm-5">
                     <DetailsProjets nom="CRUD en CLI" images={[go]} lien="https://github.com/DRF-dev/CRUD_CLI" />
-                    <DetailsProjets nom="Page d'informations sur la machine" images={[py, flask]} lien="https://github.com/DRF-dev/firstFlask" />
+                    <DetailsProjets nom="Cracking de mot de passe simple" images={[py]} lien="https://github.com/DRF-dev/Crack_simple_password" />
                 </Row>
             </div>
         </Container>
