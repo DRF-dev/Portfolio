@@ -1,0 +1,14 @@
+version: "3.4"
+
+services:
+  portfolio:
+    stdin_open: true
+    build:
+      context: .
+    ports:
+      - 4000:4000
+    environment:
+      MONGO_URI: ${MONGO_URI}
+      PORT: ${PORT}
+      MAIL: ${MAIL}
+      MDPMAIL: ${MDPMAIL}

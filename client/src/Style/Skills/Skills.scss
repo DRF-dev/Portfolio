@@ -1,59 +1,84 @@
 @import '../variables';
 
-#skills{
-    .wrap{
-        margin-top: 200px;
-        perspective: 1000px;
-        perspective-origin: 50% 50%;
-        .cube{
-            transform-style: preserve-3d;
-            width: 200px;
-            height: 200px;
-            margin: auto;
-            position: relative;
-            animation: loop 10s linear infinite;
-            img{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                opacity: .98;
-                background-color: $fondApp;
-            }
-            img:nth-child(1){
-                transform: rotateY(0deg) translateZ(100px);
-            }
-            img:nth-child(2){
-                transform: rotateY(90deg) translateZ(100px);
-            }
-            img:nth-child(3){
-                transform: rotateY(180deg) translateZ(100px);
-            }
-            img:nth-child(4){
-                transform: rotateY(-90deg) translateZ(100px);
-            }
-            img:nth-child(5){
-                transform: rotateX(90deg) translateZ(100px);
-            }
-            img:nth-child(6){
-                transform: rotateX(-90deg) translateZ(100px);
-            }
-        }
+#skills {
+  h1 {
+    color: $fondLiens;
+  }
+
+  .wrap {
+    transform: translateY(40vh);
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+
+    .cube {
+      transform-style: preserve-3d;
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      position: relative;
+      animation: loop 10s linear infinite;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: .98;
+        background-color: $fondApp;
+      }
+
+      img:nth-child(1) {
+        transform: rotateY(0deg) translateZ(100px);
+      }
+
+      img:nth-child(2) {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+
+      img:nth-child(3) {
+        transform: rotateY(180deg) translateZ(100px);
+      }
+
+      img:nth-child(4) {
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+
+      img:nth-child(5) {
+        transform: rotateX(90deg) translateZ(100px);
+      }
+
+      img:nth-child(6) {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
     }
+  }
+
+  h2 {
+    color: $fondLiens;
+  }
 }
 
-@keyframes loop{
-    0%{ transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
-    50%{ transform: rotateX(180deg) rotateY(360deg) rotate(90deg);}
-    100%{ transform: rotateX(360deg) rotateY(360deg) rotate(360deg);}
+@keyframes loop {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateX(180deg) rotateY(360deg) rotate(90deg);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotate(360deg);
+  }
 }
 
-@media screen and (max-width: 575px){
-    #skills{
-        .responsiveCanva{
-            margin-top: -15%;
-        }
-        .wrap{
-            margin-top: 50px;
-        }
+@media screen and (max-width: 575px) {
+  #skills {
+    .responsiveCanva {
+      margin-top: -15%;
     }
+
+    .wrap {
+      margin-top: 50px;
+    }
+  }
 }

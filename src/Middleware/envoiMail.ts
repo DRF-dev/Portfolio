@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express"
 import * as nodemailer from "nodemailer"
 
-const mail = async(req: Request, res: Response, next: NextFunction) => {
+const mail = (req: Request, res: Response, next: NextFunction) => {
     const transporteur = nodemailer.createTransport({
         service: 'outlook',
         auth: {
